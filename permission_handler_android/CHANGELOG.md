@@ -61,7 +61,7 @@
 
 ## 12.0.3
 
-- Updates the dependency on `permission_handler_platform_interface` to version 4.1.0 (SiriKit support is only available for iOS or macOS).
+- Updates the dependency on `permission_handler_platform_interface` to version 4.1.0.
 
 ## 12.0.2
 

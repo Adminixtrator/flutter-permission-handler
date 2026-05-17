@@ -20,7 +20,7 @@
 
 ## 4.1.0
 
-- Adds the `Permission.assistant` which allows users to request permissions to access SiriKit on iOS and macOS platforms. This is a no-op on all other platforms.
+- Adds the `Permission.assistant` permission on iOS and macOS platforms. This is a no-op on all other platforms.
 
 ## 4.0.2
 

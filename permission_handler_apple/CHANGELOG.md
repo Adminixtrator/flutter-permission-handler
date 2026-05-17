@@ -45,7 +45,7 @@ access the device location has been requested.
 
 ## 9.3.0
 
-* Adds support to request authorization to access SiriKit via the `Permission.assistant` permission.
+* Adds support to request authorization via the `Permission.assistant` permission.
 
 ## 9.2.0
 

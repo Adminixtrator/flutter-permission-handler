@@ -127,8 +127,6 @@ You must list the permission you want to use in your application:
           ## dart: PermissionGroup.criticalAlerts
           'PERMISSION_CRITICAL_ALERTS=1',
 
-          ## dart: PermissionGroup.assistant
-          'PERMISSION_ASSISTANT=1',
         ]
 
       end
@@ -167,7 +165,6 @@ You must list the permission you want to use in your application:
 | PermissionGroup.bluetooth                                                                   | NSBluetoothAlwaysUsageDescription, NSBluetoothPeripheralUsageDescription                                       | PermissionGroupBluetooth               |
 | PermissionGroup.appTrackingTransparency                                                     | NSUserTrackingUsageDescription                                                                                 | PermissionGroupAppTrackingTransparency |
 | PermissionGroup.criticalAlerts                                                              | UNAuthorizationOptionCriticalAlert                                                                             | PermissionGroupCriticalAlerts          |
-| PermissionGroup.assistant                                                                   | NSSiriUsageDescription                                                                                         | PermissionGroupAssistant               |
 
 
 4. Clean & Rebuild
@@ -299,21 +296,6 @@ It is probably caused by a difference between completeSdkVersion and targetSdkVe
 ### Checking or requesting a permission terminates the application on iOS. What can I do?
 
 First of all make sure all that the `ios/Runner/Info.plist` file contains entries for all the permissions the application requires. If an entry is missing iOS will terminate the application as soon as the particular permission is being checked or requested.
-
-If the application requires access to SiriKit (by requesting the `Permission.assistant` permission), also make sure to add the `com.apple.developer.siri` entitlement to the application configuration. To do so create a file (if it doesn't exists already) called `Runner.entitlements` in the `ios/Runner` folder that is part of the project. Open the file and add the following contents:
-
-```xml
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>com.apple.developer.siri</key>
-	<true/>
-</dict>
-</plist>
-```
-
-The important part here is the `key` with value `com.apple.developer.siri` and the element `<true/>`. It is possible that this file also contains other entitlements depending on the needs of the application.
 
 ## Issues
 

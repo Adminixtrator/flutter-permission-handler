@@ -319,10 +319,6 @@ class Permission {
   /// Permission for reading from and writing to the device's calendar.
   static const calendarFullAccess = Permission._(37);
 
-  /// Android: Nothing
-  /// iOS: SiriKit
-  static const assistant = Permission._(38);
-
   /// Permission for reading the current background refresh status. (iOS only)
   static const backgroundRefresh = Permission._(39);
 

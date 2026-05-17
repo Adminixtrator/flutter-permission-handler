@@ -109,13 +109,6 @@
     #define PERMISSION_CRITICAL_ALERTS 0
 #endif
 
-// ios: PermissionGroupAssistant
-// Info.plist: [NSSiriUsageDescription]
-// dart: PermissionGroup.assistant
-#ifndef PERMISSION_ASSISTANT
-    #define PERMISSION_ASSISTANT 0
-#endif
-
 // ios: PermissionGroupCalendarFullAccess
 // Info.plist: [NSCalendarsFullAccessUsageDescription]
 // dart: PermissionGroup.calendarFullAccess
